@@ -24,7 +24,7 @@ Implemented Page Object Model, where page objects can be stored separately.
 Impletmented 	@Test(priority =1) signInTest() where methods are created in other class
 Utils and config.properties created to make use of reusability
 
-# reading test data from file, for example, the name of dress, size and color in the checkout test.
+#reading test data from file, for example, the name of dress, size and color in the checkout test.
 Added excelutils.java function to read data from excel
 excelutil.getvalue1() canbe used for getting data
 
