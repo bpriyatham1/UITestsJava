@@ -1,39 +1,38 @@
-# UITestsJava
+# Home test task
 
-# Logging
-Done using Apache Log4J (Configuration can be seen in "log4j.properties")
+**What do you already have?**
+-----
+ * web application with url http://automationpractice.com/index.php;
+ * 3 [test cases](TESTCASES.md);
+ * 3 automated tests.
+ 
+We give the initial version of tests in order to save your time on extracting locators. 
 
-# taking screenshot on failed tests;
-Done using Extent reports
+**What do you need to do?**
+----
+You need to improve given automated tests as much as you can by designing your own solution to develop such kinds of tests for similar applications.
+Feel free to replace any tool we used in initial version of tests(maven, junit) or add other ones, if you need.
 
-## Extent Reports (Human Readable Reports)
-Will be generated and can be viewed in "test-output/ExtentReport.html" after execution
-Failed Screenshots will be stored in the FailedTestsScreenshots folder as well.
-If the Test case failed then the Screenshot will be captured and It will be attached in the Report
+Your solution can include:
+* logging;
+* taking screenshot on failed tests;
+* generation human readable report;
+* generating random values for insignificant test data, for example, for new user;
+* WebDriver factory;
+* encapsulation layers like test data, logic of tests, actions on web pages and so on;
+* configurator:
+  * run tests in parallel mode;
+  * ability to run tests for different browsers/OS by configuring;
+  * ability to run tests for different environments(urls) by configuring/by command-line.
+* reading test data from file, for example, the name of dress, size and color in the checkout test.
 
-## Logs
-Logs can be viewed in "log" Folder in HTML and Log File Formal also in Condole While Execution
+If you would like to impress us cover as much point as you can!
 
-# generating random values for insignificant test data, for example, for new user;
-Created generaterandomname() Method for this purpose
-
-# WebDriver factory;
-Implemented Page Object Model, where page objects can be stored separately and DataHiding is done.
-
-# encapsulation layers like test data, logic of tests, actions on web pages and so on;
-Impletmented 	@Test(priority =1) signInTest() where methods are created in other class
-Utils and config.properties created to make use of reusability
-
-# reading test data from file, for example, the name of dress, size and color in the checkout test.
-Added excelutils.java function to read data from excel
-excelutil.getvalue1() canbe used for getting data
-
-# Tests are configured to run in different browsers chrome,firefox on windows, linux and mac operation systems
-## Execution Import the project in Eclipse IDE 
-Run the below files as TestNG Test from Eclipse or IntelliJ IDE:
-RunTestsonChromeBrowser.xml //Runtests only on Chrome
-RunTestsonCrossbrowsers.xml //Runtests in chrome and firefox 
-RunCrossbrowserTestsinParallel.xml //Runtests in chrome and firefox in parallel mode
-
-## Run Tests from Command Prompt
-mvn clean test -DsuiteXmlFile=testng.xml
+**Evaluation Criteria**
+-------------------
+1. The improvements are done in efficient and effective manner.
+2. The improved tests pass stably and follow described cases.
+3. The solution is well and logically organised.
+4. Tests execution does not take more time than initial version.
+5. The code is documented and is easy to-follow.
+6. The application is supplied with all the information required for us to run and validate it as well as a description and purpose of used additional libraries.

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test name="RunTestsonFirefoxBrowser(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.hellofresh.challenge.WebTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="SetExtent"/>
+          <include name="signInTest"/>
+          <include name="endReport"/>
+        </methods>
+      </class> <!-- com.hellofresh.challenge.WebTest -->
+    </classes>
+  </test> <!-- RunTestsonFirefoxBrowser(failed) -->
+</suite> <!-- Failed suite [Suite] -->
